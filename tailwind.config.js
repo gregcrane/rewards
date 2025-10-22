@@ -10,7 +10,7 @@ module.exports = {
         xl: '1440px',
       },
       colors: {
-        primary: 'Green',
+        primary: '#f0fa2d',
         'primary-hover': '#990000',
         'background-dark': '#282828',
         'background-light': '#F5F5F5',

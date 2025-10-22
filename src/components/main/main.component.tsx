@@ -42,18 +42,14 @@ const Main = () => {
   };
 
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <h2>Reward Criteria</h2>
-      <ul className=' p-3 font-bold text-center text-2xl'>
-        {csvData.length ? (
-          csvData.map((csv, i) => <li key={i}>{csv}</li>)
-        ) : (
-          <li>Loading Conditions</li>
-        )}
-        <div className='mt-5'>
+      <ul className="my-5 p-3 font-bold text-center text-2xl rounded-md border-2 border-grey-700 w-[60%]">
+        {csvData.length ? csvData.map((csv, i) => <li key={i}>{csv}</li>) : <li>Loading Conditions</li>}
+        <div className="mt-5">
           <h2>The reward goes to: {rewardSelect}</h2>
           <button
-            className='rounded-lg bg-primary hover:bg-primary-hover hover:text-white mb-5 px-3 py-2'
+            className="rounded-lg bg-primary hover:bg-primary-hover hover:text-white my-5 px-3 py-2"
             onClick={handleRewardSelect}
           >
             Select Reward

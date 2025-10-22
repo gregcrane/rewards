@@ -4,8 +4,8 @@ type MarqueeProps = {
 
 const BannerMarquee = ({ children }: MarqueeProps) => {
   return (
-    <div className='truncate h-[70px] relative'>
-      <div className='animate-marquee absolute text-2xl p-2'>{children}</div>
+    <div className="truncate h-[120px] relative">
+      <div className="animate-marquee absolute text-2xl p-2">{children}</div>
     </div>
   );
 };
